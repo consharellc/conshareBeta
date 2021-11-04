@@ -8,7 +8,7 @@ const SamplePage = () => {
       <h2 className="title gx-mb-4"><IntlMessages id="sidebar.samplePage"/></h2>
 
       <div className="gx-d-flex justify-content-center">
-        <h4>Start building your app. Happy Coding!</h4>
+        <h4>Feeds section. upload your photos or videos</h4>
       </div>
 
     </div>
