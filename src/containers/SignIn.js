@@ -63,7 +63,7 @@ const SignIn = () => {
                 id="app.userAuth.signUp"/></Link>
               </Form.Item>
               <span
-                className="gx-text-light gx-fs-sm"> demo user email: 'demo@example.com' and password: 'demo#123'</span>
+                className="gx-text-light gx-fs-sm"> conshare Better, Faster, Simple and Reliable </span>
             </Form>
           </div>
           <AppNotificationContainer loading={isLoading} error={error}/>
