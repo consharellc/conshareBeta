@@ -30,9 +30,9 @@ const SidebarLogo = ({sidebarCollapsed, setSidebarCollapsed}) => {
 
       <Link to="/" className="gx-site-logo">
         {navStyle === NAV_STYLE_NO_HEADER_MINI_SIDEBAR && width >= TAB_SIZE ?
-          <img alt="lo" src={("/assets/images/w-logo.png")}/> :
+          <img alt="lo" src={("/assets/images/w-logo1.png")}/> :
           themeType === THEME_TYPE_LITE ?
-            <img alt="logo1" src={("/assets/images/logo-white.png")}/> :
+            <img alt="logo1" src={("/assets/images/logo1.png")}/> :
             <img alt="logo2" src={("/assets/images/logo.png")}/>}
       </Link>
     </div>
