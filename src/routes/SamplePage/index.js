@@ -9,6 +9,7 @@ const SamplePage = () => {
 
       <div className="gx-d-flex justify-content-center">
         <h4>Feeds section. upload your photos or videos</h4>
+        <p>git test trial</p>
       </div>
 
     </div>
