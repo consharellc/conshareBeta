@@ -25,12 +25,13 @@ export const useProvideAuth = () => {
   const userLogin = (user, callbackFun) => {
     fetchStart();
     httpClient
-      .post('auth/login', user)
+      .post('users/login/', user)
       .then(({ data }) => {
-        if (data.result) {
+        console.log(data.access);
+        if (data.access) {
           fetchSuccess();
-          httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + data.token.access_token;
-          localStorage.setItem('token', data.token.access_token);
+          httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + data.access;
+          localStorage.setItem('token', data.access);
           getAuthUser();
           if (callbackFun) callbackFun();
         } else {
@@ -45,8 +46,9 @@ export const useProvideAuth = () => {
   const userSignup = (user, callbackFun) => {
     fetchStart();
     httpClient
-      .post('auth/register', user)
+      .post('users/register/', user)
       .then(({ data }) => {
+        console.log(data)
         if (data.result) {
           fetchSuccess();
           localStorage.setItem('token', data.token.access_token);
@@ -105,7 +107,7 @@ export const useProvideAuth = () => {
   const getAuthUser = () => {
     fetchStart();
     httpClient
-      .post('auth/me')
+      .get('users/profile/')
       .then(({ data }) => {
         if (data.user) {
           fetchSuccess();
@@ -132,7 +134,7 @@ export const useProvideAuth = () => {
     }
 
     httpClient
-      .post('auth/me')
+      .post('users/profile/')
       .then(({ data }) => {
         if (data.user) {
           setAuthUser(data.user);
