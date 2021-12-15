@@ -21,7 +21,7 @@ const SignIn = () => {
         <div className="gx-app-login-main-content">
           <div className="gx-app-logo-content">
             <div className="gx-app-logo-content-bg">
-              <img src="https://via.placeholder.com/272x395" alt='Neature'/>
+              <img src="/assets/images/logo1.jpg" alt='Neature'/>
             </div>
             <div className="gx-app-logo-wid">
               <h1><IntlMessages id="app.userAuth.signIn"/></h1>
@@ -29,7 +29,7 @@ const SignIn = () => {
               <p><IntlMessages id="app.userAuth.getAccount"/></p>
             </div>
             <div className="gx-app-logo">
-              <img alt="example" src="/assets/images/logo.png"/>
+              <img alt="example" src="/assets/images/logo1.jpg"/>
             </div>
           </div>
           <div className="gx-app-login-content">
