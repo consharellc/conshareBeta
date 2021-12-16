@@ -39,12 +39,6 @@ const SignIn = () => {
               onFinish={onFinish}
               onFinishFailed={onFinishFailed}
               className="gx-signin-form gx-form-row0">
-
-              {/* <Form.Item
-                // initialValue="demo@example.com"
-                rules={[{required: true, message: 'The input is not valid E-mail!'}]} name="email">
-                <Input placeholder="Email"/>
-              </Form.Item> */}
               <Form.Item
                 rules={[{required: true, message: 'Please input your username!'}]} name="username">
                 <Input type="text" placeholder="username"/>

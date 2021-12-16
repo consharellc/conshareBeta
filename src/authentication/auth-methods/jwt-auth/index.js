@@ -32,7 +32,7 @@ export const useProvideAuth = () => {
           fetchSuccess();
           httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + data.access;
           localStorage.setItem('token', data.access);
-          getAuthUser();
+          // getAuthUser();
           if (callbackFun) callbackFun();
         } else {
           fetchError(data.error);
