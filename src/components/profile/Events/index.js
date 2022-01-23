@@ -2,7 +2,7 @@ import React from "react";
 
 import Widget from "components/Widget/index";
 import EventItem from "./EventItem";
-import {eventList} from "../../../routes/socialApps/Profile/data"
+import {eventList} from "../../../routes/Profile/data"
 
 const Events = () => {
   return (
