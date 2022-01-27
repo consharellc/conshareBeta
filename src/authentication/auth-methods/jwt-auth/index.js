@@ -32,7 +32,7 @@ export const useProvideAuth = () => {
           fetchSuccess();
           httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + data.access;
           localStorage.setItem('token', data.access);
-          // getAuthUser();
+          getAuthUser();
           if (callbackFun) callbackFun();
         } else {
           fetchError(data.error);
@@ -48,7 +48,7 @@ export const useProvideAuth = () => {
     httpClient
       .post('users/register/', user)
       .then(({ data }) => {
-        console.log(data)
+        console.log(data);
         if (data.result) {
           fetchSuccess();
           localStorage.setItem('token', data.token.access_token);
@@ -109,6 +109,7 @@ export const useProvideAuth = () => {
     httpClient
       .get('users/profile/')
       .then(({ data }) => {
+        console.log(data);
         if (data.user) {
           fetchSuccess();
           setAuthUser(data.user);
