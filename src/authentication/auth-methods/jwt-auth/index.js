@@ -85,23 +85,25 @@ export const useProvideAuth = () => {
   const renderSocialMediaLogin = () => null;
 
   const userSignOut = (callbackFun) => {
-    fetchStart();
-    httpClient
-      .post('auth/logout')
-      .then(({ data }) => {
-        if (data.result) {
-          fetchSuccess();
-          httpClient.defaults.headers.common['Authorization'] = '';
-          localStorage.removeItem('token');
-          setAuthUser(false);
-          if (callbackFun) callbackFun();
-        } else {
-          fetchError(data.error);
-        }
-      })
-      .catch(function (error) {
-        fetchError(error.message);
-      });
+    // fetchStart();
+    localStorage.removeItem('token');
+    setAuthUser(false);
+    // httpClient
+    //   .post('auth/logout')
+    //   .then(({ data }) => {
+    //     if (data.result) {
+    //       fetchSuccess();
+    //       httpClient.defaults.headers.common['Authorization'] = '';
+    //       localStorage.removeItem('token');
+    //       setAuthUser(false);
+    //       if (callbackFun) callbackFun();
+    //     } else {
+    //       fetchError(data.error);
+    //     }
+    //   })
+    //   .catch(function (error) {
+    //     fetchError(error.message);
+    //   });
   };
 
   const getAuthUser = () => {

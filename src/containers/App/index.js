@@ -117,7 +117,7 @@ const App = () => {
       if (!authUser) {
         history.push('/signin');
       } else if (initURL === '' || initURL === '/' || initURL === '/signin') {
-        history.push('/sample');
+        history.push('/home');
       } else {
         history.push(initURL);
       }

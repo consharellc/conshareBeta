@@ -7,7 +7,7 @@ const Profile = (props) => {
 
   const [isFollow, setIsFollow] = useState(false);
 
-  const authUser = useSelector(({auth}) => auth.authUser);
+  // const authUser = useSelector(({auth}) => auth.authUser);
 
   const handleToggle = () => {
     setIsFollow((previousState) => ({
@@ -48,10 +48,10 @@ const Profile = (props) => {
       </div>
       <div className="gx-mb-xl-4 gx-mb-3">
         <p>You are following {name}</p>
-        {authUser === id ? null :
+        {/* {authUser === id ? null :
           <Button className="gx-btn-sm gx-mb-0" type="primary"
                   onClick={handleToggle}>{isFollow === true ? 'Follow' : 'Unfollow'}</Button>
-        }
+        } */}
       </div>
     </Auxiliary>
   )

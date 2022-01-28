@@ -44,8 +44,20 @@ const SidebarContent = ({sidebarCollapsed, setSidebarCollapsed}) => {
             mode="inline">
 
             <Menu.Item key="sample">
-              <Link to="/sample"><i className="icon icon-widgets"/>
-                <span><IntlMessages id="sidebar.samplePage"/></span>
+              <Link to="/home"><i className="icon icon-widgets"/>
+                <span><IntlMessages id="Home"/></span>
+              </Link>
+            </Menu.Item>
+
+            <Menu.Item key="My Network">
+              <Link to="/home"><i className="icon icon-widgets"/>
+                <span><IntlMessages id="Network"/></span>
+              </Link>
+            </Menu.Item>
+
+            <Menu.Item key="refferals">
+              <Link to="/home"><i className="icon icon-widgets"/>
+                <span><IntlMessages id="Refferals"/></span>
               </Link>
             </Menu.Item>
 

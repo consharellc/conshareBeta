@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Row} from "antd";
 
-import Profile from "components/wall/Profile/index";
+import Profile from "../../components/wall/Profile/index";
 import PostList from "../../components/wall/PostList/index";
 import Interests from "../../components/wall/Interests/index";
 import Photos from "../../components/wall/Photos/index";

@@ -202,7 +202,83 @@ export const postList = [
       isLike: false,
       commentList: []
     }]
-  }
+  },
+  {
+    id: 1,
+    text: '',
+    user: {id: 1, name: 'Kenery Thomson', image: "https://via.placeholder.com/500X500"},
+    date: 'Sun Jul 22 2018 10:02:47 GMT+0530 (India Standard Time)',
+    mediaList: [{image: "https://via.placeholder.com/600X400"}, {image: "https://via.placeholder.com/600X400"}],
+    viewCount: 350,
+    likeCount: 150,
+    isLike: false,
+    commentCount: 0,
+    commentList: [{
+      user: {id: 1, name: 'Kenery Thomson', image: "https://via.placeholder.com/150"},
+      comment: 'Wow ! Excellent I particularly like the use of whitespace here Keep it up',
+      date: 'Mon Jul 23 2018 10:02:47 GMT+0530 (India Standard Time)',
+      isLike: true,
+      likeCount: 2,
+      commentList: []
+    }]
+  },
+  {
+    id: 1,
+    text: '',
+    user: {id: 1, name: 'Kenery Thomson', image: "https://via.placeholder.com/500X500"},
+    date: 'Sun Jul 22 2018 10:02:47 GMT+0530 (India Standard Time)',
+    mediaList: [{image: "https://via.placeholder.com/600X400"}, {image: "https://via.placeholder.com/600X400"}],
+    viewCount: 350,
+    likeCount: 150,
+    isLike: false,
+    commentCount: 0,
+    commentList: [{
+      user: {id: 1, name: 'Kenery Thomson', image: "https://via.placeholder.com/150"},
+      comment: 'Wow ! Excellent I particularly like the use of whitespace here Keep it up',
+      date: 'Mon Jul 23 2018 10:02:47 GMT+0530 (India Standard Time)',
+      isLike: true,
+      likeCount: 2,
+      commentList: []
+    }]
+  },
+  {
+    id: 1,
+    text: '',
+    user: {id: 1, name: 'Kenery Thomson', image: "https://via.placeholder.com/500X500"},
+    date: 'Sun Jul 22 2018 10:02:47 GMT+0530 (India Standard Time)',
+    mediaList: [{image: "https://via.placeholder.com/600X400"}, {image: "https://via.placeholder.com/600X400"}],
+    viewCount: 350,
+    likeCount: 150,
+    isLike: false,
+    commentCount: 0,
+    commentList: [{
+      user: {id: 1, name: 'Kenery Thomson', image: "https://via.placeholder.com/150"},
+      comment: 'Wow ! Excellent I particularly like the use of whitespace here Keep it up',
+      date: 'Mon Jul 23 2018 10:02:47 GMT+0530 (India Standard Time)',
+      isLike: true,
+      likeCount: 2,
+      commentList: []
+    }]
+  },
+  {
+    id: 1,
+    text: '',
+    user: {id: 1, name: 'Kenery Thomson', image: "https://via.placeholder.com/500X500"},
+    date: 'Sun Jul 22 2018 10:02:47 GMT+0530 (India Standard Time)',
+    mediaList: [{image: "https://via.placeholder.com/600X400"}, {image: "https://via.placeholder.com/600X400"}],
+    viewCount: 350,
+    likeCount: 150,
+    isLike: false,
+    commentCount: 0,
+    commentList: [{
+      user: {id: 1, name: 'Kenery Thomson', image: "https://via.placeholder.com/150"},
+      comment: 'Wow ! Excellent I particularly like the use of whitespace here Keep it up',
+      date: 'Mon Jul 23 2018 10:02:47 GMT+0530 (India Standard Time)',
+      isLike: true,
+      likeCount: 2,
+      commentList: []
+    }]
+  },
 ];
 
 export const photoList = [
