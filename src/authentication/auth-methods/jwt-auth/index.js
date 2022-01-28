@@ -110,9 +110,10 @@ export const useProvideAuth = () => {
       .get('users/profile/')
       .then(({ data }) => {
         console.log(data);
-        if (data.user) {
+        if (data.profile) {
+          console.log(data.profile);
           fetchSuccess();
-          setAuthUser(data.user);
+          setAuthUser(data.profile);
         } else {
           fetchError(data.error);
         }
@@ -135,10 +136,10 @@ export const useProvideAuth = () => {
     }
 
     httpClient
-      .post('users/profile/')
+      .get('users/profile/')
       .then(({ data }) => {
-        if (data.user) {
-          setAuthUser(data.user);
+        if (data.profile) {
+          setAuthUser(data.profile);
         }
         setLoadingUser(false);
       })
