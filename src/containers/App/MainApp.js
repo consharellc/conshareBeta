@@ -49,7 +49,7 @@ const getContainerClass = (navStyle) => {
 
 const getNavStyles = (navStyle) => {
   switch (navStyle) {
-    case NAV_STYLE_DEFAULT_HORIZONTAL :
+    case NAV_STYLE_DARK_HORIZONTAL :
       return <HorizontalDefault/>;
     case NAV_STYLE_DARK_HORIZONTAL :
       return <HorizontalDark/>;
@@ -70,7 +70,7 @@ const getNavStyles = (navStyle) => {
     case NAV_STYLE_NO_HEADER_EXPANDED_SIDEBAR :
       return <NoHeaderNotification/>;
     default :
-      return null;
+      return <HorizontalDark/>;
   }
 };
 
