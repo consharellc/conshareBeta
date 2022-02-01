@@ -10,6 +10,7 @@ import BelowHeader from "../Topbar/BelowHeader/index";
 import Topbar from "../Topbar/index";
 import {footerText} from "../../util/config";
 import App from "../../routes/index";
+import Customizer from "../Customizer";
 
 import {
   NAV_STYLE_ABOVE_HEADER,
@@ -96,9 +97,11 @@ const MainApp = () => {
             <div className="gx-layout-footer-content">
               {footerText}
             </div>
+            
           </Footer>
         </Content>
       </Layout>
+      <Customizer></Customizer>
     </Layout>
   )
 };

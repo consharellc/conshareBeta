@@ -49,7 +49,7 @@ const SidebarContent = ({sidebarCollapsed, setSidebarCollapsed}) => {
               </Link>
             </Menu.Item>
 
-            <Menu.Item key="My Network">
+            {/* <Menu.Item key="My Network">
               <Link to="/home"><i className="icon icon-widgets"/>
                 <span><IntlMessages id="Network"/></span>
               </Link>
@@ -59,7 +59,7 @@ const SidebarContent = ({sidebarCollapsed, setSidebarCollapsed}) => {
               <Link to="/home"><i className="icon icon-widgets"/>
                 <span><IntlMessages id="Refferals"/></span>
               </Link>
-            </Menu.Item>
+            </Menu.Item> */}
 
           </Menu>
         </CustomScrollbars>
