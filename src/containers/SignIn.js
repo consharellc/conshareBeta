@@ -29,7 +29,7 @@ const SignIn = () => {
               <p><IntlMessages id="app.userAuth.getAccount"/></p>
             </div>
             <div className="gx-app-logo">
-              <img alt="example" src="/assets/images/logo1.jpg"/>
+              <img alt="example" src="/assets/images/logoh.png"/>
             </div>
           </div>
           <div className="gx-app-login-content">
