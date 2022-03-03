@@ -1,4 +1,8 @@
-<svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
+<svg width="50" height="50" viewBox="0 0 50 50">
+<animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.5s" repeatCount="indefinite" /><div class="open_grepper_editor" title="Edit & Save To Grepper"></div>
+    <path fill="#c779d0" d="M25,5A20.14,20.14,0,0,1,45,22.88a2.51,2.51,0,0,0,2.49,2.26h0A2.52,2.52,0,0,0,50,22.33a25.14,25.14,0,0,0-50,0,2.52,2.52,0,0,0,2.5,2.81h0A2.51,2.51,0,0,0,5,22.88,20.14,20.14,0,0,1,25,5Z"></path>
+</svg><div class="open_grepper_editor" title="Edit & Save To Grepper"></div>
+<!-- <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
      id="el_q9TJh6D9M">
   <style>@-webkit-keyframes el_R9UW4-P7ah_cFTtL09b-_Animation{0%{-webkit-transform: translate(50.609373807907104px,
     50.12313608825207px) rotate(0deg) translate(-50.609373807907104px, -50.12313608825207px);transform:
@@ -49,4 +53,4 @@
         id="el_kL3ZG-zAr2"/>
     </g>
   </g>
-</svg>
+</svg> -->
