@@ -21,11 +21,11 @@ const SignIn = () => {
         <div className="gx-app-login-main-content">
           <div className="gx-app-logo-content">
             <div className="gx-app-logo-content-bg">
-              <img src="/assets/images/logo1.jpg" alt='Neature'/>
+              <img src="/assets/images/logoh.png" alt='conshare_rep'/>
             </div>
             <div className="gx-app-logo-wid">
               <h1><IntlMessages id="app.userAuth.signIn"/></h1>
-              <p><IntlMessages id="app.userAuth.bySigning"/></p>
+              <p>By Signing In, you can avail full features of our services</p>
               <p><IntlMessages id="app.userAuth.getAccount"/></p>
             </div>
             <div className="gx-app-logo">

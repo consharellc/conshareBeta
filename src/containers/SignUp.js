@@ -23,7 +23,7 @@ const SignUp = () => {
         <div className="gx-app-login-main-content">
           <div className="gx-app-logo-content">
             <div className="gx-app-logo-content-bg">
-              <img src="/assets/images/logo1.jpg" alt="test" />
+              <img src="/assets/images/logoh.png" alt="conshare" />
             </div>
             <div className="gx-app-logo-wid">
               <h1>
@@ -37,7 +37,7 @@ const SignUp = () => {
               </p>
             </div>
             <div className="gx-app-logo">
-              <img alt="example" src="/assets/images/logo1.jpg" />
+              <img alt="example" src="/assets/images/logoh.png" />
             </div>
           </div>
 
