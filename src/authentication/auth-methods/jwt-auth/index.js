@@ -49,10 +49,10 @@ export const useProvideAuth = () => {
       .post('users/register/', user)
       .then(({ data }) => {
         console.log(data);
-        if (data.result) {
+        if (data.access) {
           fetchSuccess();
-          localStorage.setItem('token', data.token.access_token);
-          httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + data.token.access_token;
+          localStorage.setItem('token', data.access);
+          httpClient.defaults.headers.common['Authorization'] = 'Bearer ' + data.access;
           getAuthUser();
           if (callbackFun) callbackFun();
         } else {
