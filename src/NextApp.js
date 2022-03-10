@@ -8,6 +8,7 @@ import "styles/wieldy.less";
 import configureStore, {history} from './appRedux/store';
 import App from "./containers/App/index";
 import {AuthProvider} from "./authentication";
+// import store from './appRedux/store'
 
 const store = configureStore();
 
