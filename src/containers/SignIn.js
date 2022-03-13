@@ -25,8 +25,8 @@ const SignIn = () => {
             </div>
             <div className="gx-app-logo-wid">
               <h1><IntlMessages id="app.userAuth.signIn"/></h1>
-              <p>By Signing In, you can avail full features of our services</p>
-              <p><IntlMessages id="app.userAuth.getAccount"/></p>
+              <p>Sign In to start getting lucrative connections today through reffering!</p>
+              <p>sign in</p>
             </div>
             <div className="gx-app-logo">
               <img alt="example" src="/assets/images/logoh.png"/>
@@ -49,8 +49,8 @@ const SignIn = () => {
                 <Input type="password" placeholder="Password"/>
               </Form.Item>
               <Form.Item>
-                <Checkbox><IntlMessages id="appModule.iAccept"/></Checkbox>
-                <span className="gx-signup-form-forgot gx-link"><IntlMessages
+                <Checkbox><IntlMessages id="by signing in you agree to our"/></Checkbox>
+                <span className="gx-signin-form-forgot gx-link"><IntlMessages
                   id="appModule.termAndCondition"/></span>
               </Form.Item>
               <Form.Item>

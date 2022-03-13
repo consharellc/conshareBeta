@@ -30,7 +30,7 @@ const SignUp = () => {
                 <IntlMessages id="app.userAuth.signUp" />
               </h1>
               <p>
-                <IntlMessages id="app.userAuth.bySigning" />
+                <IntlMessages id="by signing up you can grow your business by customers being reffered straight to your business" />
               </p>
               <p>
                 <IntlMessages id="app.userAuth.getAccount" />
