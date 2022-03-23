@@ -31,4 +31,5 @@ export const INIT_URL = 'INIT_URL';
 export const USER_DATA = 'user_data';
 export const USER_TOKEN_SET = 'user_token_set';
 export const UPDATE_LOAD_USER = 'UPDATE_LOAD_USER';
+export const UPDATE_PROFILE = 'UPDATE_PROFILE';
 
