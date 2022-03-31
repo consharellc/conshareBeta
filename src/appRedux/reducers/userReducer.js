@@ -4,7 +4,7 @@ const initialState = {
     isUpdated: false,
  }
 
-const ProfileReducer = (state = initialState, action) => { 
+const UserReducer = (state = initialState, action) => { 
     switch (action.type) {
        case UPDATE_PROFILE :
           state.isUpdated = !state.isUpdated; //original object altered
@@ -13,4 +13,4 @@ const ProfileReducer = (state = initialState, action) => {
           return state;
     }
  }
- export default ProfileReducer ;
+ export default UserReducer ;
