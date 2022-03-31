@@ -8,11 +8,16 @@ export const history = createBrowserHistory();
 const routeMiddleware = routerMiddleware(history);
 const middlewares = [thunk, routeMiddleware];
 
+const composeEnhancers =
+  typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
+    : compose;
+
 export default function configureStore(preloadedState = {}) {
   return createStore(
     createRootReducer(history), // root reducer with router state
     preloadedState,
-    compose(
+    composeEnhancers(
       applyMiddleware(
         routerMiddleware(history), // for dispatching history actions
         ...middlewares
