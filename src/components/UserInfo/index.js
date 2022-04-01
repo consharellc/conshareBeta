@@ -4,7 +4,7 @@ import {useAuth} from "../../authentication";
 import {useHistory} from "react-router-dom";
 
 const UserInfo = () => {
-  const {userSignOut} = useAuth();
+  const {userSignOut, authUser} = useAuth();
   const history = useHistory();
 
   const onLogoutClick = () => {
@@ -24,7 +24,7 @@ const UserInfo = () => {
 
   return (
     <Popover overlayClassName="gx-popover-horizantal" placement="bottomRight" content={userMenuOptions} trigger="click">
-      <Avatar src={"https://via.placeholder.com/150"} className="gx-avatar gx-pointer" alt=""/>
+      <Avatar src={authUser.profile_pic} className="gx-avatar gx-pointer" alt=""/>
     </Popover>
   );
 };
