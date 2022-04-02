@@ -1,31 +1,35 @@
 import React from "react";
 import {Avatar} from "antd";
+import {useAuth} from '../../../authentication/';
 
 const ProfileHeader = () => {
+
+  const {authUser} = useAuth();
+
   return (
     <div className="gx-profile-banner">
       <div className="gx-profile-container">
         <div className="gx-profile-banner-top">
           <div className="gx-profile-banner-top-left">
             <div className="gx-profile-banner-avatar">
-              <Avatar className="gx-size-90" alt="..." src={"https://via.placeholder.com/150"}/>
+              <Avatar className="gx-size-90" alt="..." src={authUser.profile_pic}/>
             </div>
             <div className="gx-profile-banner-avatar-info">
-              <h2 className="gx-mb-2 gx-mb-sm-3 gx-fs-xxl gx-font-weight-light">Kiley Brown</h2>
-              <p className="gx-mb-0 gx-fs-lg">Florida, USA</p>
+              <h2 className="gx-mb-2 gx-mb-sm-3 gx-fs-xxl gx-font-weight-light">{authUser.name}</h2>
+              <p className="gx-mb-0 gx-fs-lg">{authUser.city} {authUser.country}</p>
             </div>
           </div>
           <div className="gx-profile-banner-top-right">
             <ul className="gx-follower-list">
               <li>
-                <span className="gx-follower-title gx-fs-lg gx-font-weight-medium">2k+</span>
+                <span className="gx-follower-title gx-fs-lg gx-font-weight-medium">{authUser.followers_count}</span>
                 <span className="gx-fs-sm">Followers</span></li>
               <li>
-                <span className="gx-follower-title gx-fs-lg gx-font-weight-medium">847</span>
+                <span className="gx-follower-title gx-fs-lg gx-font-weight-medium">{authUser.followers_count}</span>
                 <span className="gx-fs-sm">Following</span></li>
               <li>
-                <span className="gx-follower-title gx-fs-lg gx-font-weight-medium">327</span>
-                <span className="gx-fs-sm">Friends</span>
+                <span className="gx-follower-title gx-fs-lg gx-font-weight-medium">3</span>
+                <span className="gx-fs-sm">connections</span>
               </li>
             </ul>
           </div>
@@ -43,7 +47,7 @@ const ProfileHeader = () => {
                 <span className="gx-link">Photos</span>
               </li>
               <li>
-                <span className="gx-link">Friends <span className="gx-fs-xs">287</span></span>
+                <span className="gx-link">Friends <span className="gx-fs-xs">{authUser.followers_count}</span></span>
               </li>
               <li>
                 <span className="gx-link">More</span>
