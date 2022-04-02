@@ -13,9 +13,13 @@ const UserProfile = () => {
     });
   }
 
+  const onAccountClick = () => {
+    history.push('/profile')
+  }
+
   const userMenuOptions = (
     <ul className="gx-user-popover">
-      <li>My Account</li>
+      <li onClick={onAccountClick}>My Account</li>
       <li>Connections</li>
       <li onClick={onLogoutClick}>Logout
       </li>
@@ -25,8 +29,8 @@ const UserProfile = () => {
   return (
     <div className="gx-flex-row gx-align-items-center gx-mb-4 gx-avatar-row">
       <Popover placement="bottomRight" content={userMenuOptions} trigger="click">
-        <Avatar src={authUser.profile_pic} className="gx-size-40 gx-pointer gx-mr-3" alt=""/>
-        <span className="gx-avatar-name">{authUser.username}<i className="icon icon-chevron-down gx-fs-xxs gx-ml-2"/></span>
+        <Avatar src={authUser.profile_pic} className="gx-size-40 gx-pointer gx-mr-3" alt="profilepic"/>
+        <span className="gx-avatar-name">{authUser.name || authUser.username }<i className="icon icon-chevron-down gx-fs-xxs gx-ml-2"/></span>
       </Popover>
     </div>
   )
