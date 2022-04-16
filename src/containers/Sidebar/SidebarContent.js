@@ -60,6 +60,11 @@ const SidebarContent = ({sidebarCollapsed, setSidebarCollapsed}) => {
                 <span><IntlMessages id="Profile"/></span>
               </Link>
             </Menu.Item>
+            <Menu.Item key="chat">
+              <Link to="/chat"><i className="icon icon-widgets"/>
+                <span><IntlMessages id="Chat"/></span>
+              </Link>
+            </Menu.Item>
 
           </Menu>
         </CustomScrollbars>

@@ -6,11 +6,11 @@ import Moment from "moment";
 import ChatUserList from "components/chat/ChatUserList";
 import conversationList from "./data/conversationList";
 import Conversation from "components/chat/Conversation/index";
-import users from "./data/chatUsers";
+import users from "./data/chatUser";
 import ContactList from "components/chat/ContactList/index";
 import IntlMessages from "util/IntlMessages";
 import SearchBox from "components/SearchBox";
-import CircularProgress from "../../../components/CircularProgress/index";
+import CircularProgress from "../../components/CircularProgress/index";
 
 const TabPane = Tabs.TabPane;
 
@@ -97,7 +97,7 @@ class Chat extends Component {
                     className="gx-size-60" alt="John Doe"/>
           </div>
 
-          <div className="gx-user-name h4 gx-my-2">Robert Johnson</div>
+          <div className="gx-user-name h4 gx-my-2">Gman Ngesh</div>
 
         </div>
       </div>
