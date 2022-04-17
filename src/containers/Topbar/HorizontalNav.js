@@ -45,6 +45,12 @@ const HorizontalNav = () => {
             <IntlMessages id="sidebar.samplePage"/>
           </Link>
         </Menu.Item>
+        <Menu.Item key="home">
+          <Link to="/home">
+            <i className="icon icon-widgets"/>
+            <IntlMessages id="sidebar.home"/>
+          </Link>
+        </Menu.Item>
       </SubMenu>
     </Menu>
 
