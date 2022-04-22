@@ -126,6 +126,26 @@ export const useProvideAuth = () => {
       });
   };
 
+  const getPosts = () => {
+    fetchStart();
+    httpClient
+      .get('feed/')
+      .then(({ data }) => {
+        console.log(data);
+        if (data.profile) {
+          console.log(data.profile);
+          fetchSuccess();
+          setAuthUser(data.profile);
+        } else {
+          fetchError(data.error);
+        }
+      })
+      .catch(function (error) {
+        httpClient.defaults.headers.common['Authorization'] = '';
+        fetchError(error.message);
+      });
+  };
+
   // Subscribe to user on mount
   // Because this sets state in the callback it will cause any ...
   // ... component that utilizes this hook to re-render with the ...
