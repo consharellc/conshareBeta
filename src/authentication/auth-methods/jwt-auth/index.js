@@ -129,16 +129,16 @@ export const useProvideAuth = () => {
   const getPosts = () => {
     fetchStart();
     httpClient
-      .get('feed/')
+      .get('feeds/')
       .then(({ data }) => {
         console.log(data);
-        if (data.profile) {
-          console.log(data.profile);
-          fetchSuccess();
-          setAuthUser(data.profile);
-        } else {
-          fetchError(data.error);
-        }
+        // if (data.profile) {
+        //   console.log(data);
+        //   fetchSuccess();
+        //   setAuthUser(data.profile);
+        // } else {
+        //   fetchError(data.error);
+        // }
       })
       .catch(function (error) {
         httpClient.defaults.headers.common['Authorization'] = '';
