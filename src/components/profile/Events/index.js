@@ -16,7 +16,7 @@ const Events = () => {
       <div className="gx-pt-md-3">
        
         <ul>
-          <li>{authUser.Interests}</li>
+          {/* <li>{authUser}</li> */}
         </ul>
       </div>
     </Widget>
