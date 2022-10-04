@@ -1,6 +1,4 @@
 import React, {useState} from "react";
-import {Button} from "antd";
-import {useSelector} from "react-redux";
 import Auxiliary from "util/Auxiliary";
 import {useAuth} from '../../../authentication/';
 

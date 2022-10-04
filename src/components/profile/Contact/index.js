@@ -1,6 +1,5 @@
 import React from "react";
 import Widget from "components/Widget";
-import {contactList} from '../../../routes/Profile/data'
 import {useAuth} from '../../../authentication/';
 
 const Contact = () => {

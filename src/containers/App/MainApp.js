@@ -10,7 +10,6 @@ import BelowHeader from "../Topbar/BelowHeader/index";
 import Topbar from "../Topbar/index";
 import {footerText} from "../../util/config";
 import App from "../../routes/index";
-import Customizer from "../Customizer";
 
 import {
   NAV_STYLE_ABOVE_HEADER,
@@ -52,8 +51,6 @@ const getNavStyles = (navStyle) => {
   switch (navStyle) {
     case NAV_STYLE_DARK_HORIZONTAL :
       return <HorizontalDefault/>;
-    case NAV_STYLE_DARK_HORIZONTAL :
-      return <HorizontalDark/>;
     case NAV_STYLE_INSIDE_HEADER_HORIZONTAL :
       return <InsideHeader/>;
     case NAV_STYLE_ABOVE_HEADER :
@@ -97,11 +94,10 @@ const MainApp = () => {
             <div className="gx-layout-footer-content">
               {footerText}
             </div>
-            
+
           </Footer>
         </Content>
       </Layout>
-      <Customizer></Customizer>
     </Layout>
   )
 };

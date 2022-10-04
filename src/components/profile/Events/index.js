@@ -1,8 +1,6 @@
 import React from "react";
 
 import Widget from "components/Widget/index";
-import EventItem from "./EventItem";
-import {eventList} from "../../../routes/Profile/data"
 import {useAuth} from '../../../authentication/';
 
 const Events = () => {
@@ -14,7 +12,7 @@ const Events = () => {
         <p className="gx-text-grey gx-fs-sm gx-mb-0">What {authUser.username} is Interest in</p>
       </div>
       <div className="gx-pt-md-3">
-       
+
         <ul>
           {/* <li>{authUser}</li> */}
         </ul>
