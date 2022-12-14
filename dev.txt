@@ -1,3 +1,2 @@
-docker-compose up
 docker build -t consharebeta .
 docker run -p 3000:3000 -d consharebeta

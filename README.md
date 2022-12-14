@@ -6,9 +6,6 @@ even job opportunities.
 Authentication, 
 Feed; users can perform all crud ops on the app. 
 Userprofile 
-# todo 
-feeds like 
-referrals
 
 # Installation
 
@@ -18,7 +15,6 @@ clone the repo
 Make sure you have docker installed in your machine 
 
 run the following commands
-```docker-compose up ```
 ```docker build -t consharebeta . ```
 ```docker run -p 3000:3000 -d consharebeta ```
 
